@@ -2,11 +2,7 @@ import React from 'react';
 import { Button } from './styles';
 
 export const Login = () => (
-  <Button
-    onClick={() => {
-      console.log('clicked');
-    }}
-  >
+  <Button>
     <svg
       style={{ color: '#ffffff' }}
       focusable="false"
