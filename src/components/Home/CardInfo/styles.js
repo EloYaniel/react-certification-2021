@@ -36,7 +36,7 @@ export const Description = styled.p`
 `;
 
 export const ViewMore = styled.button`
-display:block;
+  display:block;
   width: 100%;
   padding: 1.5rem;
   font-size: 2rem;

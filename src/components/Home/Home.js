@@ -19,15 +19,14 @@ export const Home = () => {
     <>
       <Title>Welcome to my first challenge!!!</Title>
       <CardContainer>
-        {youtubeInfoList.length &&
-          youtubeInfoList.map((item) => (
-            <CardInfo
-              key={item.id}
-              title={item.title}
-              description={item.description}
-              imageURL={item.imageURL}
-            />
-          ))}
+        {youtubeInfoList.map((item) => (
+          <CardInfo
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            imageURL={item.imageURL}
+          />
+        ))}
       </CardContainer>
     </>
   );
