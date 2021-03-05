@@ -1,10 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component tests suit Should match snapshot 1`] = `
+exports[`App Component tests suit Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <header
+        class="sc-hBEYos gsLuxg"
+      >
+        <div
+          class="sc-fFubgz dvfghE"
+        >
+          <div
+            class="sc-jrAGrp"
+          >
+            <div
+              class="sc-kEjbxe hsLKei"
+            />
+            <div
+              class="sc-kEjbxe hsLKei"
+            />
+            <div
+              class="sc-kEjbxe hsLKei"
+            />
+          </div>
+          <input
+            class="sc-iqHYGH cJKsxE"
+            placeholder="Search..."
+          />
+        </div>
+        <div
+          class="sc-fodVxV UoiRO"
+        >
+          <label
+            class="sc-crrsfI hCXsci"
+          >
+            <input
+              class="sc-dQppl cNJloB"
+              type="checkbox"
+            />
+            <div
+              class="sc-bqyKva bALiIa"
+            />
+            <span
+              class="sc-kstrdz DYTsV"
+            >
+              Dark mode
+            </span>
+          </label>
+          <button
+            class="sc-pFZIQ clLSRs"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              style="color: rgb(255, 255, 255);"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
       <h1
         class="sc-fubCfw isVJiM"
       >
@@ -49,6 +108,65 @@ Object {
     </div>
   </body>,
   "container": <div>
+    <header
+      class="sc-hBEYos gsLuxg"
+    >
+      <div
+        class="sc-fFubgz dvfghE"
+      >
+        <div
+          class="sc-jrAGrp"
+        >
+          <div
+            class="sc-kEjbxe hsLKei"
+          />
+          <div
+            class="sc-kEjbxe hsLKei"
+          />
+          <div
+            class="sc-kEjbxe hsLKei"
+          />
+        </div>
+        <input
+          class="sc-iqHYGH cJKsxE"
+          placeholder="Search..."
+        />
+      </div>
+      <div
+        class="sc-fodVxV UoiRO"
+      >
+        <label
+          class="sc-crrsfI hCXsci"
+        >
+          <input
+            class="sc-dQppl cNJloB"
+            type="checkbox"
+          />
+          <div
+            class="sc-bqyKva bALiIa"
+          />
+          <span
+            class="sc-kstrdz DYTsV"
+          >
+            Dark mode
+          </span>
+        </label>
+        <button
+          class="sc-pFZIQ clLSRs"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            style="color: rgb(255, 255, 255);"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
     <h1
       class="sc-fubCfw isVJiM"
     >

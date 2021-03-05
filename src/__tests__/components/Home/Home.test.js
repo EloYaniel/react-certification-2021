@@ -1,7 +1,8 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { Home } from '../../../components/Home';
 import { getYoutubeMainInfoList } from '../../../services/youtube';
+import { Provider } from '../../../contexts/SearchContext';
 
 jest.mock('../../../services/youtube');
 
@@ -12,12 +13,17 @@ describe('Home Component tests suit', () => {
         {
           id: '123',
           title: 'Wizeline Co.',
-          description: 'Awesome Compnay',
+          description: 'Awesome Company',
           imageURL: 'http://wizeline.com',
         },
       ])
     );
-    const element = render(<Home />);
+    const viwMoreFnMock = jest.fn();
+    const element = render(
+      <Provider>
+        <Home handleViewMore={viwMoreFnMock} />
+      </Provider>
+    );
 
     await waitFor(() => {
       screen.getByText('Wizeline Co.');
@@ -35,15 +41,48 @@ describe('Home Component tests suit', () => {
         {
           id: '123',
           title: 'Wizeline Co.',
-          description: 'Awesome Compnay',
+          description: 'Awesome Company',
           imageURL: 'http://wizeline.com',
         },
       ])
     );
-    render(<Home />);
+    const viwMoreFnMock = jest.fn();
+    render(
+      <Provider>
+        <Home handleViewMore={viwMoreFnMock} />
+      </Provider>
+    );
 
     await waitFor(() => {
-      expect(screen.getByText('Welcome to my first challenge!!!')).toBeInTheDocument();
+      expect(screen.getByText('Welcome to my challenge 3!!!')).toBeInTheDocument();
+    });
+
+    getYoutubeMainInfoList.mockRestore();
+  });
+
+  it('Should call passed function', async () => {
+    getYoutubeMainInfoList.mockImplementation(() =>
+      Promise.resolve([
+        {
+          id: '123',
+          title: 'Wizeline Co.',
+          description: 'Awesome Company',
+          imageURL: 'http://wizeline.com',
+        },
+      ])
+    );
+    const viwMoreFnMock = jest.fn();
+    render(
+      <Provider>
+        <Home handleViewMore={viwMoreFnMock} />
+      </Provider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByText('Welcome to my challenge 3!!!')).toBeInTheDocument();
+      fireEvent.click(screen.getByText('View More'));
+
+      expect(viwMoreFnMock.mock.calls.length).toBe(1);
     });
 
     getYoutubeMainInfoList.mockRestore();
