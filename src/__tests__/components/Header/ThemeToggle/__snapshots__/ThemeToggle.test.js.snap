@@ -11,6 +11,7 @@ Object {
         <input
           class="sc-gsTCUz iTSuuM"
           type="checkbox"
+          value="false"
         />
         <div
           class="sc-dlfnbm hbAlGb"
@@ -30,6 +31,7 @@ Object {
       <input
         class="sc-gsTCUz iTSuuM"
         type="checkbox"
+        value="false"
       />
       <div
         class="sc-dlfnbm hbAlGb"

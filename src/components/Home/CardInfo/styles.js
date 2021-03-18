@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.cardColor};
   border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ export const Content = styled.div`
 export const Title = styled.h1`
   font-size: 3rem;
   font-weight: 500;
-  color: #0d0d0d;
+  color: ${(props) => props.theme.cardTitleColor};
   margin-bottom: 1.5rem;
 `;
 
@@ -31,7 +31,7 @@ export const Description = styled.p`
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: 1.7;
-  color: #3d3d3d;
+  color: ${(props) => props.theme.cardDescriptionColor};
   margin-bottom: 2.5rem;
 `;
 

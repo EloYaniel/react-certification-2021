@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-hBEYos gsLuxg"
+        class="sc-hBEYos kNTqcj"
       >
         <div
           class="sc-fFubgz dvfghE"
@@ -38,6 +38,7 @@ Object {
             <input
               class="sc-dQppl cNJloB"
               type="checkbox"
+              value="false"
             />
             <div
               class="sc-bqyKva bALiIa"
@@ -65,15 +66,15 @@ Object {
         </div>
       </header>
       <h1
-        class="sc-fubCfw isVJiM"
+        class="sc-fubCfw jKxQaW"
       >
-        Welcome to my challenge 3!!!
+        Welcome to my challenges!!!
       </h1>
       <div
         class="sc-iBPRYJ rZyVl"
       >
         <div
-          class="sc-bdfBwQ jnhvfR"
+          class="sc-bdfBwQ bXBoRa"
         >
           <div
             class="sc-gsTCUz"
@@ -87,12 +88,12 @@ Object {
               class="sc-dlfnbm bXSedS"
             >
               <h1
-                class="sc-hKgILt bLNMyE"
+                class="sc-hKgILt gdXIsv"
               >
                 Wizeline Co.
               </h1>
               <p
-                class="sc-eCssSg kmNQzC"
+                class="sc-eCssSg FhYLp"
               >
                 Awesome Company
               </p>
@@ -109,7 +110,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-hBEYos gsLuxg"
+      class="sc-hBEYos kNTqcj"
     >
       <div
         class="sc-fFubgz dvfghE"
@@ -141,6 +142,7 @@ Object {
           <input
             class="sc-dQppl cNJloB"
             type="checkbox"
+            value="false"
           />
           <div
             class="sc-bqyKva bALiIa"
@@ -168,15 +170,15 @@ Object {
       </div>
     </header>
     <h1
-      class="sc-fubCfw isVJiM"
+      class="sc-fubCfw jKxQaW"
     >
-      Welcome to my challenge 3!!!
+      Welcome to my challenges!!!
     </h1>
     <div
       class="sc-iBPRYJ rZyVl"
     >
       <div
-        class="sc-bdfBwQ jnhvfR"
+        class="sc-bdfBwQ bXBoRa"
       >
         <div
           class="sc-gsTCUz"
@@ -190,12 +192,12 @@ Object {
             class="sc-dlfnbm bXSedS"
           >
             <h1
-              class="sc-hKgILt bLNMyE"
+              class="sc-hKgILt gdXIsv"
             >
               Wizeline Co.
             </h1>
             <p
-              class="sc-eCssSg kmNQzC"
+              class="sc-eCssSg FhYLp"
             >
               Awesome Company
             </p>

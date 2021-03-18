@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Context as SearchContext } from '../../contexts/SearchContext';
+import { Context as GlobalContext } from '../../contexts/GlobalContext';
 import { getYoutubeMainInfoList } from '../../services/youtube';
 import { CardInfo } from './CardInfo/CardInfo';
 import { CardContainer, Title } from './styles';
@@ -7,7 +7,7 @@ import { CardContainer, Title } from './styles';
 export const Home = ({ handleViewMore }) => {
   const {
     state: { searchText },
-  } = useContext(SearchContext);
+  } = useContext(GlobalContext);
   const [youtubeInfoList, setYoutubeInfoList] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Home = ({ handleViewMore }) => {
 
   return (
     <>
-      <Title>Welcome to my challenge 3!!!</Title>
+      <Title>Welcome to my challenges!!!</Title>
       <CardContainer>
         {youtubeInfoList.map((item) => (
           <CardInfo
