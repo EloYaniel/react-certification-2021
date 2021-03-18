@@ -1,95 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component tests suit Should match snapshot 1`] = `
+exports[`VideoPlayer Component tests suit Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h1
-        class="sc-fubCfw isVJiM"
-      >
-        Welcome to my challenge 3!!!
-      </h1>
-      <div
-        class="sc-iBPRYJ rZyVl"
-      >
-        <div
-          class="sc-bdfBwQ jnhvfR"
-        >
-          <div
-            class="sc-gsTCUz"
-          >
-            <img
-              alt="Wizeline Co."
-              class="sc-gKsewC cFFDOc"
-              src="http://wizeline.com"
-            />
-            <div
-              class="sc-dlfnbm bXSedS"
-            >
-              <h1
-                class="sc-hKgILt bLNMyE"
-              >
-                Wizeline Co.
-              </h1>
-              <p
-                class="sc-eCssSg kmNQzC"
-              >
-                Awesome Company
-              </p>
-              <button
-                class="sc-jSgupP iOFbKs"
-              >
-                View More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <iframe
+        class="sc-bdfBwQ gTSScc"
+        src="https://www.youtube-nocookie.com/embed/abcdef"
+      />
     </div>
   </body>,
   "container": <div>
-    <h1
-      class="sc-fubCfw isVJiM"
-    >
-      Welcome to my challenge 3!!!
-    </h1>
-    <div
-      class="sc-iBPRYJ rZyVl"
-    >
-      <div
-        class="sc-bdfBwQ jnhvfR"
-      >
-        <div
-          class="sc-gsTCUz"
-        >
-          <img
-            alt="Wizeline Co."
-            class="sc-gKsewC cFFDOc"
-            src="http://wizeline.com"
-          />
-          <div
-            class="sc-dlfnbm bXSedS"
-          >
-            <h1
-              class="sc-hKgILt bLNMyE"
-            >
-              Wizeline Co.
-            </h1>
-            <p
-              class="sc-eCssSg kmNQzC"
-            >
-              Awesome Company
-            </p>
-            <button
-              class="sc-jSgupP iOFbKs"
-            >
-              View More
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <iframe
+      class="sc-bdfBwQ gTSScc"
+      src="https://www.youtube-nocookie.com/embed/abcdef"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

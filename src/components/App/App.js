@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Home } from '../Home';
 import { Header } from '../Header';
+import { Detail } from '../Detail';
+import { Provider as SearchProvider } from '../../contexts/SearchContext';
+
+const DETAIL_VIEW = 'DETAIL_VIEW';
+const HOME_VIEW = 'HOME_VIEW';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -27,10 +32,32 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const App = () => (
-  <>
-    <GlobalStyle />
-    <Header />
-    <Home />
-  </>
-);
+export const App = () => {
+  const [currentView, setCurrentView] = useState(HOME_VIEW);
+  const [currentVideoId, setCurrentVideoId] = useState();
+
+  const viewMoreHandler = (id) => {
+    setCurrentVideoId(id);
+    setCurrentView(DETAIL_VIEW);
+  };
+
+  const goHomeViewHandler = () => {
+    setCurrentView(HOME_VIEW);
+  };
+
+  return (
+    <SearchProvider>
+      <GlobalStyle />
+      <Header />
+      {currentView === HOME_VIEW ? (
+        <Home handleViewMore={viewMoreHandler} />
+      ) : (
+        <Detail
+          handleGoBack={goHomeViewHandler}
+          videoId={currentVideoId}
+          onVideoChanged={setCurrentVideoId}
+        />
+      )}
+    </SearchProvider>
+  );
+};
