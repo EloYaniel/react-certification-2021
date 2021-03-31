@@ -1,5 +1,6 @@
 import React from 'react';
 import { act, render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { RelatedVideoList } from '../../../../components/Detail/RelatedVideoList';
 import { getRelatedVideos } from '../../../../services/youtube';
 
@@ -22,7 +23,8 @@ describe('RelatedVideoList Component tests suit', () => {
     let element;
     act(() => {
       element = render(
-        <RelatedVideoList onVideoChanged={onVideoChangedMock} relatedToVideoId="abcde" />
+        <RelatedVideoList onVideoChanged={onVideoChangedMock} relatedToVideoId="abcde" />,
+        { wrapper: MemoryRouter }
       );
     });
 

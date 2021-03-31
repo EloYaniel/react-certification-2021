@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { MemoryRouter } from 'react-router';
 import { Header } from '../../../components/Header';
 import { Provider } from '../../../contexts';
 
@@ -8,7 +9,8 @@ describe('Header Component tests suit', () => {
     const element = render(
       <Provider>
         <Header />
-      </Provider>
+      </Provider>,
+      { wrapper: MemoryRouter }
     );
     expect(element).toMatchSnapshot();
   });

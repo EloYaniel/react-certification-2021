@@ -7,14 +7,14 @@ Object {
     <div>
       <input
         class="sc-bdfBwQ kMVObu"
-        placeholder="Search..."
+        placeholder="Wizeline"
       />
     </div>
   </body>,
   "container": <div>
     <input
       class="sc-bdfBwQ kMVObu"
-      placeholder="Search..."
+      placeholder="Wizeline"
     />
   </div>,
   "debug": [Function],

@@ -13,7 +13,7 @@ export const SearchBar = () => {
   return (
     <Container
       onChange={(e) => searchDebounced.callback(e.target.value)}
-      placeholder="Search..."
+      placeholder="Wizeline"
     />
   );
 };

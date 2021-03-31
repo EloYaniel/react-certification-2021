@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router';
 import { CardInfo } from '../../../../components/Home/CardInfo';
 
 describe('CardInfo Component tests suit', () => {
@@ -9,7 +10,8 @@ describe('CardInfo Component tests suit', () => {
         description="wizeline is awesome."
         imageURL="http://wizeline.com"
         title="Wizeline Company"
-      />
+      />,
+      { wrapper: MemoryRouter }
     );
     expect(element).toMatchSnapshot();
   });
@@ -20,7 +22,8 @@ describe('CardInfo Component tests suit', () => {
         description="wizeline is awesome."
         imageURL="http://wizeline.com"
         title="Wizeline Company"
-      />
+      />,
+      { wrapper: MemoryRouter }
     );
     const imgElement = screen.getByRole('img');
 
