@@ -6,7 +6,7 @@ export const Header = styled.header`
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #1c5476;
+  background-color: ${(props) => props.theme.backgroundColor};
   width: 100%;
   min-height: 8vh;
   z-index: 1;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { SearchBar } from '../../../../components/Header/SearchBar';
-import { Provider } from '../../../../contexts/SearchContext';
+import { Provider } from '../../../../contexts';
 
 describe('SearchBar Component tests suit', () => {
   it('Should match snapshot', () => {

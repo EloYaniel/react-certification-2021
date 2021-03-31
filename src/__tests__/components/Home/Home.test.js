@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { Home } from '../../../components/Home';
 import { getYoutubeMainInfoList } from '../../../services/youtube';
-import { Provider } from '../../../contexts/SearchContext';
+import { Provider } from '../../../contexts';
 
 jest.mock('../../../services/youtube');
 
@@ -54,7 +54,7 @@ describe('Home Component tests suit', () => {
     );
 
     await waitFor(() => {
-      expect(screen.getByText('Welcome to my challenge 3!!!')).toBeInTheDocument();
+      expect(screen.getByText('Welcome to my challenges!!!')).toBeInTheDocument();
     });
 
     getYoutubeMainInfoList.mockRestore();
@@ -79,7 +79,7 @@ describe('Home Component tests suit', () => {
     );
 
     await waitFor(() => {
-      expect(screen.getByText('Welcome to my challenge 3!!!')).toBeInTheDocument();
+      expect(screen.getByText('Welcome to my challenges!!!')).toBeInTheDocument();
       fireEvent.click(screen.getByText('View More'));
 
       expect(viwMoreFnMock.mock.calls.length).toBe(1);

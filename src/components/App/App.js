@@ -1,38 +1,18 @@
-import React, { useState } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import React, { useContext, useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 import { Home } from '../Home';
 import { Header } from '../Header';
 import { Detail } from '../Detail';
-import { Provider as SearchProvider } from '../../contexts/SearchContext';
+import { Provider as GlobalProvider, Context as GlobalContext } from '../../contexts';
+import { GlobalStyle, lightTheme, darkTheme } from './styles';
 
 const DETAIL_VIEW = 'DETAIL_VIEW';
 const HOME_VIEW = 'HOME_VIEW';
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  body {
-    background-color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  @media only screen and (max-width: 60em) {
-    body {
-      padding: 3rem;
-    }
-  }
-`;
-
-export const App = () => {
+export const Main = () => {
+  const {
+    state: { isDarkTheme },
+  } = useContext(GlobalContext);
   const [currentView, setCurrentView] = useState(HOME_VIEW);
   const [currentVideoId, setCurrentVideoId] = useState();
 
@@ -46,7 +26,7 @@ export const App = () => {
   };
 
   return (
-    <SearchProvider>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Header />
       {currentView === HOME_VIEW ? (
@@ -58,6 +38,12 @@ export const App = () => {
           onVideoChanged={setCurrentVideoId}
         />
       )}
-    </SearchProvider>
+    </ThemeProvider>
   );
 };
+
+export const App = () => (
+  <GlobalProvider>
+    <Main />
+  </GlobalProvider>
+);

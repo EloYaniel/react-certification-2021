@@ -15,6 +15,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
   margin: 4rem;
   font-size: 4rem;
   width: 100%;
