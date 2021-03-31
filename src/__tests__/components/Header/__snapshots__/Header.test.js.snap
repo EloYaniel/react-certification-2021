@@ -6,126 +6,126 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-fubCfw jvhhUb"
+        class="sc-iqHYGH ihpwry"
       >
         <div
-          class="sc-jrAGrp kedByS"
+          class="sc-dQppl klJPtn"
         >
           <div
-            class="sc-gsTCUz"
+            class="sc-dlfnbm cbbQCX"
           >
             <div
-              class="sc-dlfnbm kCTlQu"
+              class="sc-hKgILt bzWINk"
             />
             <div
-              class="sc-dlfnbm kCTlQu"
+              class="sc-hKgILt bzWINk"
             />
             <div
-              class="sc-dlfnbm kCTlQu"
+              class="sc-hKgILt bzWINk"
             />
           </div>
           <input
-            class="sc-hKgILt rSFQb"
-            placeholder="Search..."
+            class="sc-iBPRYJ gxYavs"
+            placeholder="Wizeline"
           />
         </div>
         <div
-          class="sc-pFZIQ fnANFP"
+          class="sc-crrsfI TzpMg"
         >
           <label
-            class="sc-eCssSg jIYjj"
+            class="sc-fubCfw fKqnzi"
           >
             <input
-              class="sc-jSgupP evnAar"
+              class="sc-pFZIQ bOVXbQ"
               type="checkbox"
               value="false"
             />
             <div
-              class="sc-gKsewC XGMAO"
+              class="sc-jrAGrp ycoes"
             />
             <span
-              class="sc-iBPRYJ eCfjIf"
+              class="sc-kEjbxe goTjtW"
             >
               Dark mode
             </span>
           </label>
-          <button
+          <a
             class="sc-bdfBwQ jeXWtc"
+            href="/login"
           >
             <svg
               aria-hidden="true"
               focusable="false"
-              style="color: rgb(255, 255, 255);"
               viewBox="0 0 24 24"
             >
               <path
                 d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </header>
     </div>
   </body>,
   "container": <div>
     <header
-      class="sc-fubCfw jvhhUb"
+      class="sc-iqHYGH ihpwry"
     >
       <div
-        class="sc-jrAGrp kedByS"
+        class="sc-dQppl klJPtn"
       >
         <div
-          class="sc-gsTCUz"
+          class="sc-dlfnbm cbbQCX"
         >
           <div
-            class="sc-dlfnbm kCTlQu"
+            class="sc-hKgILt bzWINk"
           />
           <div
-            class="sc-dlfnbm kCTlQu"
+            class="sc-hKgILt bzWINk"
           />
           <div
-            class="sc-dlfnbm kCTlQu"
+            class="sc-hKgILt bzWINk"
           />
         </div>
         <input
-          class="sc-hKgILt rSFQb"
-          placeholder="Search..."
+          class="sc-iBPRYJ gxYavs"
+          placeholder="Wizeline"
         />
       </div>
       <div
-        class="sc-pFZIQ fnANFP"
+        class="sc-crrsfI TzpMg"
       >
         <label
-          class="sc-eCssSg jIYjj"
+          class="sc-fubCfw fKqnzi"
         >
           <input
-            class="sc-jSgupP evnAar"
+            class="sc-pFZIQ bOVXbQ"
             type="checkbox"
             value="false"
           />
           <div
-            class="sc-gKsewC XGMAO"
+            class="sc-jrAGrp ycoes"
           />
           <span
-            class="sc-iBPRYJ eCfjIf"
+            class="sc-kEjbxe goTjtW"
           >
             Dark mode
           </span>
         </label>
-        <button
+        <a
           class="sc-bdfBwQ jeXWtc"
+          href="/login"
         >
           <svg
             aria-hidden="true"
             focusable="false"
-            style="color: rgb(255, 255, 255);"
             viewBox="0 0 24 24"
           >
             <path
               d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
             />
           </svg>
-        </button>
+        </a>
       </div>
     </header>
   </div>,

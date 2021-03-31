@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ iVZKII"
+        class="sc-bdfBwQ eYHBVF"
       >
         <img
           alt="Wizeline Co."
@@ -14,17 +14,17 @@ Object {
           src="http://wizeline.com"
           title="Wizeline Co."
         />
-        <h2
-          class="sc-dlfnbm edLazA"
+        <h3
+          class="sc-dlfnbm kzwKye"
         >
           Wizeline Co.
-        </h2>
+        </h3>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ iVZKII"
+      class="sc-bdfBwQ eYHBVF"
     >
       <img
         alt="Wizeline Co."
@@ -32,11 +32,11 @@ Object {
         src="http://wizeline.com"
         title="Wizeline Co."
       />
-      <h2
-        class="sc-dlfnbm edLazA"
+      <h3
+        class="sc-dlfnbm kzwKye"
       >
         Wizeline Co.
-      </h2>
+      </h3>
     </div>
   </div>,
   "debug": [Function],
