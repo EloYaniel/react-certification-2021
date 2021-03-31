@@ -5,29 +5,61 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
-        class="sc-eCssSg cvkgGs"
-        type="button"
+      <div
+        class="sc-jSgupP iaInnZ"
       >
-        Go back
-      </button>
-      <iframe
-        class="sc-bdfBwQ gTSScc"
-        src="https://www.youtube-nocookie.com/embed/undefined"
-      />
+        <div
+          class="sc-gKsewC cbsqwP"
+        >
+          <iframe
+            class="sc-bdfBwQ gTSScc"
+            src="https://www.youtube-nocookie.com/embed/undefined"
+          />
+          <button
+            class="sc-eCssSg hDweQF"
+          >
+            Add to Favorites
+          </button>
+          <h2
+            class="sc-fubCfw hORWeU"
+          />
+          <h4
+            class="sc-pFZIQ jZnnif"
+          />
+        </div>
+        <div
+          class="sc-iBPRYJ jHiIsc"
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <button
-      class="sc-eCssSg cvkgGs"
-      type="button"
+    <div
+      class="sc-jSgupP iaInnZ"
     >
-      Go back
-    </button>
-    <iframe
-      class="sc-bdfBwQ gTSScc"
-      src="https://www.youtube-nocookie.com/embed/undefined"
-    />
+      <div
+        class="sc-gKsewC cbsqwP"
+      >
+        <iframe
+          class="sc-bdfBwQ gTSScc"
+          src="https://www.youtube-nocookie.com/embed/undefined"
+        />
+        <button
+          class="sc-eCssSg hDweQF"
+        >
+          Add to Favorites
+        </button>
+        <h2
+          class="sc-fubCfw hORWeU"
+        />
+        <h4
+          class="sc-pFZIQ jZnnif"
+        />
+      </div>
+      <div
+        class="sc-iBPRYJ jHiIsc"
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

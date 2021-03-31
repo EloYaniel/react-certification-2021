@@ -1,15 +1,28 @@
-import React from 'react';
-import { Button } from './styles';
+import React, { useContext } from 'react';
+import { useLocation } from 'react-router';
+import { Context as GlobalContext } from '../../../contexts';
+import { Avatar, Button } from './styles';
 
-export const Login = () => (
-  <Button>
-    <svg
-      style={{ color: '#ffffff' }}
-      focusable="false"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
+export const Login = () => {
+  const {
+    state: { userInfo },
+  } = useContext(GlobalContext);
+  const location = useLocation();
+
+  return (
+    <Button
+      to={{
+        pathname: `/login`,
+        state: { background: location },
+      }}
     >
-      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-    </svg>
-  </Button>
-);
+      {userInfo ? (
+        <Avatar src={userInfo.avatarUrl} />
+      ) : (
+        <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>
+      )}
+    </Button>
+  );
+};

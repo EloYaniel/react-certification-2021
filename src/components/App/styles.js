@@ -1,28 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
-export const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
-  body {
-    background-color: ${(props) => props.theme.bodyBackgroundColor};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  @media only screen and (max-width: 60em) {
-    body {
-      padding: 3rem;
-    }
-  }
-`;
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const darkTheme = {
   textColor: '#fff',
@@ -35,7 +11,7 @@ export const darkTheme = {
 };
 
 export const lightTheme = {
-  textColor: '#000',
+  textColor: '#464e51',
   cardColor: '#fff',
   cardTitleColor: '#0d0d0d',
   cardDescriptionColor: '#3d3d3d',
@@ -43,3 +19,24 @@ export const lightTheme = {
   primaryColor: '',
   backgroundColor: '#1c5476',
 };
+
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: ${(props) => props.theme.bodyBackgroundColor};
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const MainContainer = styled.div`
+  margin: 50px;
+`;

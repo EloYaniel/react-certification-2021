@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ ipZLkb"
+        class="sc-bdfBwQ kUZiQc"
       >
         <div
           class="sc-gsTCUz"
@@ -17,31 +17,32 @@ Object {
             src="http://wizeline.com"
           />
           <div
-            class="sc-dlfnbm bXSedS"
+            class="sc-dlfnbm ilKvLc"
           >
             <h1
-              class="sc-hKgILt VpwAc"
+              class="sc-hKgILt knNVhZ"
             >
               Wizeline Company
             </h1>
             <p
-              class="sc-eCssSg gCcyJl"
+              class="sc-eCssSg ktMhKt"
             >
               wizeline is awesome.
             </p>
-            <button
-              class="sc-jSgupP iOFbKs"
-            >
-              View More
-            </button>
           </div>
+          <a
+            class="sc-jSgupP clLjnz"
+            href="/detail/undefined"
+          >
+            View More
+          </a>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ ipZLkb"
+      class="sc-bdfBwQ kUZiQc"
     >
       <div
         class="sc-gsTCUz"
@@ -52,24 +53,25 @@ Object {
           src="http://wizeline.com"
         />
         <div
-          class="sc-dlfnbm bXSedS"
+          class="sc-dlfnbm ilKvLc"
         >
           <h1
-            class="sc-hKgILt VpwAc"
+            class="sc-hKgILt knNVhZ"
           >
             Wizeline Company
           </h1>
           <p
-            class="sc-eCssSg gCcyJl"
+            class="sc-eCssSg ktMhKt"
           >
             wizeline is awesome.
           </p>
-          <button
-            class="sc-jSgupP iOFbKs"
-          >
-            View More
-          </button>
         </div>
+        <a
+          class="sc-jSgupP clLjnz"
+          href="/detail/undefined"
+        >
+          View More
+        </a>
       </div>
     </div>
   </div>,
