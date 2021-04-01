@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getFavorites } from '../../../services/favorites';
-import { getFavoriteVideos } from '../../../services/youtube';
+import { getVideoInfo } from '../../../services/youtube';
 import { Container, Image, Title } from './styles';
 
 export const RelatedFavoriteVideoList = ({ relatedToVideoId, onVideoChanged }) => {
@@ -8,10 +8,8 @@ export const RelatedFavoriteVideoList = ({ relatedToVideoId, onVideoChanged }) =
 
   useEffect(() => {
     const videoIDs = getFavorites();
-    console.log(videoIDs, relatedToVideoId);
     videoIDs.splice(videoIDs.indexOf(relatedToVideoId), 1);
-    console.log(videoIDs);
-    getFavoriteVideos(videoIDs).then((v) => setVideoList(v));
+    getVideoInfo(videoIDs).then((v) => setVideoList(v));
   }, [relatedToVideoId]);
 
   return videoList.map((item) => (

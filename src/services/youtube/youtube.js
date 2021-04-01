@@ -29,7 +29,10 @@ export const getRelatedVideos = async (relatedToVideoId) => {
   return Promise.resolve(mainInfo);
 };
 
-export const getFavoriteVideos = async (videoIDs) => {
+export const getVideoInfo = async (videoIDs) => {
+  if (!videoIDs || !videoIDs.length) {
+    return [];
+  }
   let url =
     'https://youtube.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyBYzWLlzPQfofKh32frvUh6oKJgB98ghis';
   videoIDs.forEach((id) => {
@@ -44,19 +47,5 @@ export const getFavoriteVideos = async (videoIDs) => {
     imageURL: item.snippet.thumbnails.default.url,
   }));
 
-  return Promise.resolve(mainInfo);
-};
-
-export const getVideoInfo = async (videoID) => {
-  const url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyBYzWLlzPQfofKh32frvUh6oKJgB98ghis&id=${videoID}`;
-  const response = await fetchData(url);
-
-  const mainInfo = response.items.map((item) => ({
-    id: item.id,
-    title: item.snippet.title,
-    description: item.snippet.description,
-    imageURL: item.snippet.thumbnails.default.url,
-  }));
-
-  return Promise.resolve(mainInfo);
+  return mainInfo;
 };

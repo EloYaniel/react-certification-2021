@@ -53,8 +53,12 @@ export const FavoriteDetail = ({ history }) => {
         <FavButton onClick={handleSetFav}>
           {favorite ? 'Remove from Favorites' : 'Add to Favorites'}
         </FavButton>
-        <Title>{videoInfo.title}</Title>
-        <Subtitle>{videoInfo.description}</Subtitle>
+        {videoInfo && (
+          <>
+            <Title>{videoInfo.title}</Title>
+            <Subtitle>{videoInfo.description}</Subtitle>
+          </>
+        )}
       </MainContainer>
       <SidebarContainer>
         <RelatedFavoriteVideoList

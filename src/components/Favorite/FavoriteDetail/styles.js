@@ -37,10 +37,10 @@ export const SidebarContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   color: ${(props) => props.theme.textColor};
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.h4`
   color: ${(props) => props.theme.textColor};
 `;

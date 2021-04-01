@@ -23,7 +23,7 @@ export const Detail = ({ history }) => {
   const { videoID } = useParams();
 
   useEffect(() => {
-    getVideoInfo(videoID).then((info) => {
+    getVideoInfo([videoID]).then((info) => {
       setVideoInfo(info[0]);
     });
     setFavorite(isFavorite(videoID));

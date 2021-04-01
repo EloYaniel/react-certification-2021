@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { VideoPlayer } from '../../../../components/Detail/VideoPlayer';
+import { VideoPlayer } from '../../../../components/Shared/VideoPlayer';
 
 describe('VideoPlayer Component tests suit', () => {
   it('Should match snapshot', () => {

@@ -1,6 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
-import { Context as GlobalContext, LOGIN, LOGOUT } from '../../contexts';
+import {
+  Context as GlobalContext,
+  LOGIN_ACTION_TYPE,
+  LOGOUT_ACTION_TYPE,
+} from '../../contexts';
 import { login } from '../../services/auth';
 import { Button, Container, Error, Input, InputContainer } from './styles';
 
@@ -18,7 +22,7 @@ export const Auth = () => {
     setError('');
     try {
       const userInfo = await login(username, password);
-      dispatch({ type: LOGIN, payload: { ...userInfo } });
+      dispatch({ type: LOGIN_ACTION_TYPE, payload: { ...userInfo } });
       e.stopPropagation();
       history.goBack();
     } catch {
@@ -27,7 +31,7 @@ export const Auth = () => {
   };
 
   const handleLogout = async (e) => {
-    dispatch({ type: LOGOUT });
+    dispatch({ type: LOGOUT_ACTION_TYPE });
     e.stopPropagation();
     history.goBack();
   };

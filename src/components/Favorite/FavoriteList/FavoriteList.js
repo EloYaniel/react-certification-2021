@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getFavorites } from '../../../services/favorites/favorites';
-import { getFavoriteVideos } from '../../../services/youtube/youtube';
+import { getVideoInfo } from '../../../services/youtube/youtube';
 import { CardContainer, Title } from './styles';
 import { CardInfo } from './CardInfo';
 
@@ -9,7 +9,7 @@ export const FavoriteList = () => {
 
   useEffect(() => {
     const videoIDs = getFavorites();
-    getFavoriteVideos(videoIDs).then((videos) => {
+    getVideoInfo(videoIDs).then((videos) => {
       setYoutubeInfoList(videos);
     });
   }, []);
