@@ -16,7 +16,7 @@ describe('SearchBar Component tests suit', () => {
       </Provider>
     );
 
-    fireEvent.change(screen.getByPlaceholderText('Search...'), {
+    fireEvent.change(screen.getByPlaceholderText('Wizeline'), {
       target: { value: 'Searching in Wizeline' },
     });
 

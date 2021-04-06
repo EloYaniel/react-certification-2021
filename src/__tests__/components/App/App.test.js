@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { App } from '../../../components/App';
 import { getYoutubeMainInfoList } from '../../../services/youtube';
 
@@ -18,7 +19,7 @@ describe('App Component tests suit', () => {
       ])
     );
 
-    const element = render(<App />);
+    const element = render(<App />, { wrapper: MemoryRouter });
 
     await waitFor(() => {
       screen.getByText('Wizeline Co.');

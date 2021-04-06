@@ -1,2 +1,2 @@
 export * from './GlobalContext';
-export * from './constants';
+export * from './action-types';
